@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WBIB v4</title>
+<link rel="manifest" href="https://www.pajamaclaws.net/manifest.json">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta charset="utf-8">
+<style>
+
+body {
+margin: 0;
+padding: 0;
+background-color: orange;
+}
+
+header {
+}
+
+header > div.tab {
+position: relative;
+display: inline;
+padding: 5px;
+}
+
+div.functionbar {
+position: relative;
+width: 100%;
+padding: 5px;
+}
+
+div.functionbar > * {
+display: inline;
+}
+
+div.functions {
+float: right;
+padding-right: 2%;
+}
+
+button.go {
+border: none;
+background-color: blue;
+font-weight: bold;
+border-radius: 2.5px;
+width: 7%;
+color: white;
+}
+
+button.go:hover {
+background-color: darkblue;
+}
+
+div.active, div.inactive:hover, div.functionbar {
+background-color: white;
+}
+
+div.inactive, div.active:hover {
+background-color: #eeeeee;
+}
+
+div.active:after {
+content: " (active)";
+font-size: 10px;
+color: gray;
+}
+
+content {
+height: 100%;
+}
+
+content > * {
+background-color: white;
+padding: 5px;
+}
+
+content > main {
+border: 1px dashed lightgrey;
+border-left: none;
+border-bottom: 1px solid black;
+}
+
+content > aside {
+border: 1px dashed lightgrey;
+position: absolute;
+top: inherit;
+right: 0;
+max-width: 40%;
+}
+
+div.map {
+font-family: sans;
+position: absolute;
+right: 0.5vw;
+bottom: 0.5vh;
+background-color: lavender;
+border: 1px solid black;
+padding: 10px;
+width: 40vw;
+height: 30vh;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="tab active" id="0">Example</div>
+<div class="tab inactive" id="1">inact...</div>
+<div class="functionbar">
+<div class="searchbar">
+
+<input type="text" placeholder="http://example.com">
+<button class="go">></button>
+
+</div>
+
+<div class="functions">
+<button>?</button>
+<button>!</button>
+<button>=</button>
+</div>
+
+</div>
+</header>
+
+<content>
+<aside>aside etc. iieieiieieie</aside>
+<main>
+
+<h1>Page Content</h1>
+
+</main>
+</content>
+
+<footer>
+<div class="map">content</div>
+
+</footer>
+
+</body>
+</html>
